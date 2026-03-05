@@ -7,6 +7,8 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
+  
+  It just looked weird. For example, when your guess is higher than the secret number, it tells you to “Go HIGHER,” and when your guess is lower, “Go LOWER” which is the opposite of what should happen. Also, when you type a number and press Enter, nothing happens. You have to actually press the Submit button, and the attempt counter was inaccurate. Also the New Game button did not work at all.
 
 ---
 
