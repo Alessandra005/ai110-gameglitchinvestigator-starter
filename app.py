@@ -120,12 +120,14 @@ with st.expander("Developer Debug Info"):
 
 raw_guess = st.text_input(
     "Enter your guess:",
-    key=f"guess_input_{difficulty}"
+    key="guess_input",
+    on_change=lambda: st.session_state.update({"submit": True})
 )
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    submit = st.button("Submit Guess 🚀")
+    submit = st.session_state.get("submit", False) or st.button("Submit Guess 🚀")
+st.session_state.submit = False
 with col2:
     new_game = st.button("New Game 🔁")
 with col3:
