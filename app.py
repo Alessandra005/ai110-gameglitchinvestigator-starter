@@ -48,6 +48,15 @@ if "status" not in st.session_state:
 if "history" not in st.session_state:
     st.session_state.history = []
 
+c1, c2 = st.columns(2)
+with c1:
+    st.markdown(f'<div class="score-box">🏆 Score: {st.session_state.score}</div>', unsafe_allow_html=True)
+with c2:
+    attempts_left = attempt_limit - st.session_state.attempts
+    color = "🟢" if attempts_left > 3 else ("🟡" if attempts_left > 1 else "🔴")
+    st.markdown(f'<div class="attempt-badge">{color} {attempts_left} attempt{"s" if attempts_left != 1 else ""} left</div>', unsafe_allow_html=True)
+
+
 st.subheader("Make a guess")
 
 st.info(

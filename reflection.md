@@ -39,6 +39,8 @@ I decided to test the game manually after each change and watched how the hints,
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 - What change did you make that finally gave the game a stable secret number?
 
+So it was because Streamlit reruns the whole script every time something on the page updates. Since the code wasn't using session state correctly, the value kept getting recreated over and over. Streamlit basically refreshed the app with every interaction, so anything not stored in "st.session_state" was not going to stay the same. Once I saved the secret number in session state and stopped resetting it on each run, it finally stayed stable.
+
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -47,3 +49,5 @@ I decided to test the game manually after each change and watched how the hints,
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+Something I will do again is testing my changes right away instead of waiting until the end. It helped me catch mistakes faster and understand what each fix actually did. Next time I work with AI on a coding task, I’ll definetly be more specific with my prompts. Still, this project showed me that AI can be helpful, but it still needs me to double check to make sure it not only works, but works the way it actually should.
