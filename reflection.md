@@ -18,6 +18,8 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+I decided to use Copilot in VS Code to help me understand parts of the code that didn’t make sense. I already knew which areas were causing problems, but the AI made it easier to spot exactly where the logic was breaking. It explained the issues, and then I confirmed them by testing the game again. It also gave me suggestions that weren’t very useful though. Still, it made the debugging process easier, as long as I double checked everything myself.
+
 ---
 
 ## 3. Debugging and testing your fixes
