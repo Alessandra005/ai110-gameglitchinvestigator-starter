@@ -29,6 +29,8 @@ I decided to use Copilot in VS Code to help me understand parts of the code that
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
+I decided to test the game manually after each change and watched how the hints, attempts, and score behaved. I also ran pytest to make sure the logic functions were returning the right outcomes. Copilot helped me write the test by generating the basic structure, but I still had to prompt it correctly and adjust it so it matched the actual behavior.
+
 ---
 
 ## 4. What did you learn about Streamlit and state?
